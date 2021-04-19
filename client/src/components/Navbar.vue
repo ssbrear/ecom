@@ -15,16 +15,13 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Navbar",
-  props: {
-    msg: String,
-  },
 });
 </script>
 
 <style scoped>
 #navbar {
   display: grid;
-  font-family: "Poppins";
+  font-family: Poppins;
   background: #222222;
   color: #eaeaea;
 }
