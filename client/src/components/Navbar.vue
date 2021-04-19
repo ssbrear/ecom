@@ -27,11 +27,10 @@ export default defineComponent({
   font-family: "Poppins";
   background: #222222;
   color: #eaeaea;
-  grid-template-columns: 2fr 3fr 3fr 1fr;
 }
 #navbar > * {
   margin: 0;
-  padding: 0.75em 1em;
+  padding: 1.25em 1em;
   align-self: center;
 }
 #navbar-slogan {
@@ -39,12 +38,13 @@ export default defineComponent({
   grid-column: 1/2;
   color: white;
   font-size: 1rem;
+  padding: 0 1em;
 }
 #navbar-links {
   list-style: none;
   grid-column: 3/4;
   display: flex;
-  justify-self: center;
+  justify-self: end;
   font-size: 0.8125rem;
 }
 #navbar-links > li {
@@ -58,14 +58,12 @@ a:hover {
   width: 100%;
   text-align: center;
   grid-column: 4/5;
+  justify-self: center;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 0.8125rem;
   font-weight: 300;
   border-left: 1px solid grey;
-}
-@media (max-width: 1200px) {
-  #navbar {
-    grid-template-columns: 2fr 2fr 4fr 1fr;
-  }
 }
 @media (max-width: 900px) {
   #navbar {
@@ -77,6 +75,7 @@ a:hover {
   }
   #navbar-slogan {
     justify-self: center;
+    padding: 0.75em 0;
   }
 }
 </style>
