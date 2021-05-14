@@ -24,6 +24,7 @@ export default defineComponent({
   font-family: Poppins;
   background: #222222;
   color: #eaeaea;
+  min-height: 52.5px
 }
 #infobar > * {
   margin: 0;
@@ -36,6 +37,7 @@ export default defineComponent({
   color: white;
   font-size: 1rem;
   padding: 0 1em;
+  min-width: 153px;
 }
 #infobar-links {
   list-style: none;

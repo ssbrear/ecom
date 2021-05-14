@@ -1,7 +1,9 @@
 <template>
   <div id="searchbar">
     <button id="searchbar-menu"><i class="fas fa-bars fa-2x"></i></button>
-    <img id="searchbar-logo" src="https://via.placeholder.com/117x65" />
+    <div id="searchbar-logo-parent">
+      <img id="searchbar-logo" src="https://via.placeholder.com/117x65" />
+    </div>
     <div id="searchbar-input-div">
       <input placeholder="Search" id="searchbar-input" />
       <button id="searchbar-search-button">
@@ -29,12 +31,15 @@ export default defineComponent({
   padding: 0.75em;
   grid-auto-flow: column;
   border-bottom: 1px solid rgb(219, 219, 219);
+  min-height: 65px;
 }
 #searchbar-menu {
   display: none;
 }
-#searchbar-logo {
+#searchbar-logo-parent {
   grid-column: 1/2;
+  width: 117px;
+  height: 65px;
 }
 button {
   border: none;
@@ -78,6 +83,7 @@ button {
 #searchbar-login > i {
   position: relative;
   right: 10px;
+  min-width: 14px;
 }
 #searchbar-cart {
   font-size: 1rem;
@@ -91,6 +97,7 @@ button {
 #searchbar-cart > i {
   position: relative;
   right: 10px;
+  min-width: 18px;
 }
 @media (max-width: 900px) {
   #searchbar-login {
@@ -109,7 +116,7 @@ button {
     justify-items: center;
     align-items: center;
   }
-  #searchbar-logo {
+  #searchbar-logo-parent {
     grid-column: 3/4;
     grid-row: 1/2;
   }
